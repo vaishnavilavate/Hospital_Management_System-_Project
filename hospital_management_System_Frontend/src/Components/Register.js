@@ -44,8 +44,12 @@ function Register() {
       };
 
       // Make the API call to save the data
-      axios
-        .post("http://localhost:8080/patient/registerPatient", userData) // Your backend URL
+      axios.post(
+  "https://hospital-management-system-project-11.onrender.com/patient/registerPatient",
+  data
+)
+
+       // Your backend URL
         .then((response) => {
           toast.success("Registration successful!");
           navigate("/login"); // Redirect to the login page after successful registration
