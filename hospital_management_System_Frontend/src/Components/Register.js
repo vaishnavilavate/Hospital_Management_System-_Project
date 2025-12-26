@@ -46,7 +46,7 @@ function Register() {
       // Make the API call to save the data
       axios.post(
   "https://hospital-management-system-project-11.onrender.com/patient/registerPatient",
-  data
+ userData
 )
 
        // Your backend URL
